@@ -1,7 +1,7 @@
 - hosts: webservers
-
+  
   tasks:
     - name: apply
-      command: kubectl apply -f k8.yaml
+      command: kubectl apply -f /home/pradeep/Desktop/mypythonrepo/k8.yaml
     - name: reload
       command: kubectl rollout restart deployment.apps/hello-python
