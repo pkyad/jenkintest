@@ -29,6 +29,7 @@ spec:
       containers:
       - name: hello-python
         image: pkyad/test:latest
+        imagePullPolicy: Always
         command: ["python" , "app.py"]
         ports:
         - containerPort: 5000

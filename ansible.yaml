@@ -1,0 +1,8 @@
+- hosts: webservers
+  become: true
+
+  tasks:
+    - name: apply
+      command: kubectl apply -f k8.yaml
+    - name: reload
+      command: kubectl rollout restart deployment.apps/hello-python
