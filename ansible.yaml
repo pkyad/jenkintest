@@ -1,5 +1,4 @@
 - hosts: webservers
-  become: false
 
   tasks:
     - name: apply
