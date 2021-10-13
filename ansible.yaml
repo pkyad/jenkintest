@@ -4,4 +4,4 @@
     - name: apply
       command: kubectl apply -f /home/toolsadmin/Desktop/mypythonrepo/deploy.yaml
     - name: reload
-      command: kubectl rollout restart deployment.apps/shpl-aap
+      command: kubectl rollout restart deployment.apps/shpl-app
