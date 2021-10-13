@@ -1,2 +1,2 @@
 [webservers]
-192.168.4.64
+192.168.4.64 ansible_ssh_pass=SHTools2021** ansible_ssh_user=toolsadmin
