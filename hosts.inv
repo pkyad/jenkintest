@@ -1,2 +1,2 @@
 [webservers]
-192.168.4.64 ansible_user=toolsadmin ansible_sudo_pass=SHTools2021**
+192.168.4.64
