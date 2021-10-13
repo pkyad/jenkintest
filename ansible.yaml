@@ -2,6 +2,6 @@
   
   tasks:
     - name: apply
-      command: kubectl apply -f /home/pradeep/Desktop/mypythonrepo/k8.yaml
+      command: kubectl apply -f /home/toolsadmin/Desktop/mypythonrepo/deploy.yaml
     - name: reload
-      command: kubectl rollout restart deployment.apps/hello-python
+      command: kubectl rollout restart deployment.apps/shpl-aap
