@@ -4,5 +4,7 @@
   tasks:
     - name: apply
       command: kubectl apply -f /home/toolsadmin/Desktop/mypythonrepo/deploy.yaml
-    - name: reload
+    - name: reload app
       command: kubectl rollout restart deployment.apps/shpl-app
+    - name: reload celery 
+      command: kubectl rollout restart deployment.apps/celery-worker
