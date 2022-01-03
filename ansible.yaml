@@ -3,8 +3,8 @@
   become_method: sudo
   tasks:
     - name: apply
-      command: kubectl apply -f /home/toolsadmin/Desktop/kubernetes-postgres/app/shapp-deploy.yaml
+      command: kubectl apply -f /home/toolsadmin/Desktop/kubernetes-postgres/app/nginx-gunicorn.yaml
     - name: reload app
-      command: kubectl rollout restart deployment.apps/shpl-app
+      command: kubectl rollout restart deployment.apps/nginx-gunicorn
     - name: reload celery 
       command: kubectl rollout restart deployment.apps/celery-worker
